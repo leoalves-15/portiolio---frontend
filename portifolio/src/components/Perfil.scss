@@ -1,0 +1,130 @@
+@import '@/styles/index.scss';
+.contain{
+    @include container;
+    background-color: $fundo;
+    padding-top: 30px;
+}
+#fotoPerfil{
+    border-radius: 50%;
+   height: 150px;
+    width: 150px;
+    object-fit:cover ;
+    border-width: 5px;
+    border-style: solid;
+    border-color: $branco; 
+}
+.moldura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 168px;
+    width: 168px;
+    background-image: linear-gradient(to bottom right, red, purple);
+    border-radius: 50%;
+}
+.wrap{
+    @include wrap;
+}
+.fistColumn
+{
+    width: 25%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+.secondColumn{
+    width: 75%;
+    padding-left: 10%;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.contact, .datas{
+    display: flex;
+    text-align: left;
+}
+.datas{
+padding: 20px 0px;
+align-items: center;
+}
+.contact{
+    flex-direction: row;
+    align-items: center;
+}
+.btn{
+    margin-left: 20px;
+}
+#nome{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Segoe UI;
+    white-space: nowrap;
+    color: #262626;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+}
+button{
+    background-color: transparent;
+    border: 1px solid #dbdbdb;
+    color: #262626;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    padding: 5px 9px;
+    text-align: center;
+    font-weight: 400;
+}
+.desc{
+    margin-bottom: 5px;
+}
+.tipo{
+    color: #8e8e8e;
+}
+.nome{
+    font-weight: 600;
+}
+.itemDatas{
+    margin-right: 30px;
+}
+@media (max-width: 600px)
+{
+    .wrap{
+        flex-direction: column;
+    }
+    #some{
+        display: none;
+    }
+    .fistColumn{
+        justify-content: flex-start;
+        padding-left: 10%;
+    }
+    #fica{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10%;
+    }
+    #fotoPerfil{
+
+        height: 90px;
+        width: 90px; 
+    }
+    .moldura{
+       height: 100px;
+        padding: 4px;
+    }
+    .btn{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+@media (min-width: 600px)
+{
+    #fica{
+        display: none;
+
+    }
+}

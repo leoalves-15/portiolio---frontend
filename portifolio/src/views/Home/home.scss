@@ -1,0 +1,20 @@
+*{
+    background-color: #fafafa;;
+}
+.contain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 975px;
+    gap: 1em;
+}
+.home{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px)
+{
+    .contain
+   {
+    gap: 0.5em;
+   }
+}

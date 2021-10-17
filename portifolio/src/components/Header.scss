@@ -1,0 +1,44 @@
+@import '@/styles/index.scss';
+.wrap{
+@include wrap;
+justify-content: space-between;
+}
+img{
+    object-fit: contain;
+}
+#send{
+    cursor: pointer;
+}
+#search{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#busca {
+    height: 30px;
+}
+.contain {
+    @include container;
+    height: 54px;
+}
+.wrapItem{
+    display: flex;
+    
+}
+#busca{
+    background: rgba(var(--b3f,250,250,250),1);
+    font-size: 16px;
+    border: solid 1px rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+    color: #262626;
+    padding: 3px 10px 3px 26px;
+    outline: 0;
+}
+@media (max-width: 600px)
+{
+    #search{
+        display: none;
+    }
+}
